@@ -4,7 +4,6 @@
  * bubble_sort - sorts an array ASC
  * @array: array
  * @size: array size
-
  * Return: None
 */
 
