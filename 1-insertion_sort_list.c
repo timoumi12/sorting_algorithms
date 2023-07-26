@@ -16,7 +16,7 @@ void insert(listint_t **list, listint_t **n1, listint_t *n2)
 	if ((*n1)->prev != NULL)
 		(*n1)->prev->next = n2;
 	else
-		*h = n2;
+		*list = n2;
 	(*n1)->prev = n2;
 	*n1 = n2->prev;
 }
