@@ -29,11 +29,11 @@ void insert(listint_t **list, listint_t **n1, listint_t *n2)
 
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *past, *aux, *current = (*list)->next;
+	listint_t *past, *aux, *current;
 
 	if (list == NULL || (*list)->next == NULL || *list == NULL)
 		return;
-	for (; current != NULL; current = aux)
+	for (current = (*list)->next; current != NULL; current = aux)
 	{
 		aux = current->next;
 		past = current->prev;
